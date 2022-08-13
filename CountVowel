@@ -1,0 +1,43 @@
+import java.util.*;
+public class CountVowel { 
+     
+	static void vowelcount(String s,ArrayList<Character> ch) { 
+		int count =0; 
+		for(int i=0;i<s.length();i++) { 
+			char c = s.charAt(i); 
+			if(isprime(c,ch)) { 
+				count++;
+			}
+		} 
+		System.out.println("Total vowel Count " + count);
+		
+	} 
+	static boolean isprime(char c,ArrayList<Character> ch) { 
+		for(int i=0;i<ch.size();i++) { 
+			if( c == ch.get(i)) { 
+				return true;
+			}
+		} 
+		return false;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub  
+		Scanner sc = new Scanner(System.in); 
+		String s = sc.nextLine();
+		ArrayList<Character> ch = new ArrayList<>(); 
+		ch.add('A');
+		ch.add('E');
+		ch.add('I'); 
+		ch.add('O');
+		ch.add('U');
+		ch.add('a');
+		ch.add('e');
+		ch.add('i');
+		ch.add('o'); 
+		ch.add('u'); 
+		vowelcount(s,ch);
+	}
+
+}
