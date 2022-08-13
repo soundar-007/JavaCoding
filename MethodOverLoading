@@ -1,0 +1,25 @@
+import java.util.*;
+public class MethodOverLoading {
+          
+	static void fun(String s) { 
+		
+	System.out.println("flyinggggggg");
+	} 
+	
+	
+	
+	
+	static void fun(int s) { 
+		System.out.println("movinggggg");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub 
+	     
+		MethodOverLoading s = new MethodOverLoading(); 
+		
+		s.fun(54);
+
+	}
+
+}
