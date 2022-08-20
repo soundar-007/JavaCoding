@@ -1,6 +1,11 @@
 package BasicOfJava;
 
-
+// read this , you will be able understand easily
+// interface is collection of abstract methods 
+//  **It is not a class ** ------->important 
+//It is a reference type in java 
+       
+               --Bysoundar
 
 interface one { 
 	void hello();
