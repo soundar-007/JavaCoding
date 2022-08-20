@@ -1,0 +1,35 @@
+package BasicOfJava;
+
+
+	
+	class Animal{ 
+		void Ani() {  
+			System.out.println("Animal");
+		}	
+	}
+	   
+	class lion extends Animal{
+	     void lio() { 
+	    	System.out.println("Lion");
+	} 
+	}
+	class cat extends lion{
+	     void ff(){  
+		System.out.println("meow"); 	
+	}  
+	} 
+	
+	public class Inheritance {
+	public static void main(String[] args) {
+		 
+	 cat s = new cat(); 
+	 s.Ani();
+	 s.lio();
+		
+
+	}  
+} 
+	
+	
+
+
