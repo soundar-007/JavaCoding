@@ -1,0 +1,38 @@
+package BasicOfJava;
+
+
+
+interface one { 
+	void hello();
+	
+} 
+interface two { 
+	void hey();
+} 
+interface three extends one,two{  
+	void ok();
+	
+} 
+class London implements one,two,three { 
+	@Override public void hello() { 
+		System.out.println("helllo");
+	} 
+	public void hey() { 
+		System.out.println("heyyy");
+	}
+	public 	void ok() { 
+			System.out.println("okkkkkkk");
+	
+} 
+}
+public class MultipleHeritance {
+
+	public static void main(String[] args) { 
+		London s = new London(); 
+		s.ok();
+		
+
+	}
+
+} 
+
