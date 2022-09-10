@@ -1,0 +1,21 @@
+
+
+import java.util.Scanner;
+
+public class StringLowerandUpperCaseChange {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);   //This is Vijay This is Vijay
+        String str = sc.nextLine();
+        int midpoint = str.length() / 2;
+        String Lower = "";
+        String upper = "";
+        for (int i = 0; i < str.length(); i++) {
+            if (i <= midpoint) {
+                Lower += Character.toLowerCase(str.charAt(i));
+            } else
+                upper += Character.toUpperCase(str.charAt(i));
+
+        }
+        System.out.println(Lower+upper);
+    }
+}
